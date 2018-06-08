@@ -1,0 +1,40 @@
+.container2{
+      position: relative;
+      top:15%;
+      left:1%;
+}
+
+#one{
+  margin-left:38%;
+  width:280px;
+  height: 40px;
+  background-color:#959595;
+  color: white !important;
+  font-size: 17px;
+}
+.date{
+  text-align: right;
+  font-size: 15px;
+}
+
+.gif{
+  display: block;
+  margin-left:auto;
+  margin-right: auto;
+  width: 400px;
+}
+
+.content{
+  text-align: center;
+}
+
+.content2{
+  color: green !important;
+  font-weight: bold;
+
+}
+
+.content3{
+  color: red !important;
+  font-weight: bold;
+}

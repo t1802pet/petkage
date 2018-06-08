@@ -1,0 +1,10 @@
+<!--추가예정-->
+{% extends 'base.html' %}
+
+{% block title %}꿀팁모음{% endblock %}
+{% block content %}
+<div class="blog-create">
+   {% include 'include/form.html' with form=post_form submit_title='수정' enctype='file' %}
+</div>
+{% endblock %}
+

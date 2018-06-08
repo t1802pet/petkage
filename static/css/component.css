@@ -1,0 +1,155 @@
+
+/*꿀팁모음테이블*/
+.tabletip{
+    width: 100%;
+    border-top:black 1.5px solid;
+    border-bottom:black 1.5px solid;
+    float:left;
+    clear: both;
+    text-align:center;
+    color:#000;
+   }
+   .ftd{
+      background-color:#e5edf8;
+      font-weight:bold;
+   }
+   .tabletip tr:hover {
+       background-color: #ddd;
+   }
+
+   .tabletip tr a{
+       text-decoration: none;
+       display: block;
+       color:#000;
+   }
+
+   .post-image {
+       width: 50%;
+       margin: 0 auto;
+       display: block;
+   }
+
+.cbp_tmtimeline {
+	margin: 30px 0 0 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+}
+
+/* The line */
+.cbp_tmtimeline:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 3px;
+	background: #bfbebe;
+	left: 20%;
+	margin-left: -10px;
+}
+
+
+/* Right content */
+.cbp_tmtimeline > li .cbp_tmlabel {
+	margin: 0 0 15px 25%;
+	background: #bfbebe;
+	color: #000;
+	padding: 2em;
+	font-size: 1.2em;
+	font-weight: 300;
+	line-height: 1.4;
+	position: relative;
+	border-radius: 5px;
+}
+
+.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel {
+	background: #bfbebe;
+}
+
+.cbp_tmtimeline > li .cbp_tmlabel h2 {
+	margin-top: 0px;
+	padding: 0 0 10px 0;
+	border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+
+/* The triangle */
+.cbp_tmtimeline > li .cbp_tmlabel:after {
+	right: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-right-color: #bfbebe;
+	border-width: 10px;
+	top: 10px;
+}
+
+.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
+	border-right-color: #bfbebe;
+}
+
+/* The icons */
+.cbp_tmtimeline > li .cbp_tmicon2 {
+	width: 50px;
+	height: 50px;
+	line-height: 40px;
+	position: relative;
+	background: #bfbebe;
+	border-radius: 50%;
+	left: 20%;
+	top: -10px;
+	margin: 0 0 0 -25px;
+}
+.cbp_tmtimeline > li .cbp_tmicon {
+	width: 15px;
+	height: 15px;
+	line-height: 40px;
+	position: relative;
+	background: #bfbebe;
+	border-radius: 50%;
+	left: 21%;
+	top: 30px;
+	margin: 0 0 0 -25px;
+}
+
+
+/* Example Media Queries */
+@media screen and (max-width: 65.375em) {
+
+	.cbp_tmtimeline > li .cbp_tmtime span:last-child {
+		font-size: 1.5em;
+	}
+}
+
+@media screen and (max-width: 47.2em) {
+	.cbp_tmtimeline:before {
+		display: none;
+	}
+
+
+	.cbp_tmtimeline > li .cbp_tmlabel {
+		margin: 0 0 30px 0;
+		padding: 1em;
+		font-weight: 400;
+		font-size: 95%;
+	}
+
+	.cbp_tmtimeline > li .cbp_tmlabel:after {
+		right: auto;
+		left: 20px;
+		border-right-color: transparent;
+		border-bottom-color: #bfbebe;
+		top: -20px;
+	}
+
+	.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
+		border-right-color: transparent;
+		border-bottom-color: #bfbebe;
+	}
+
+	.cbp_tmtimeline > li .cbp_tmicon,  .cbp_tmicon2{
+		display: none;
+	}
+}

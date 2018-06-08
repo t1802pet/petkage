@@ -1,0 +1,114 @@
+{% load static %}
+<!doctype html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport"
+         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="IE=Edge; chrome=1"/>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <!-- css 링크 순서 바꿨음 -->
+   <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+   <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}" />
+   <link rel="stylesheet" type="text/css" href="{% static 'css/default.css' %}" />
+   <link rel="stylesheet" type="text/css" href="{% static 'css/theme.css' %}" />
+
+
+   <link rel="stylesheet" type="text/css" href="{% static 'css/vaccine.css' %}" />
+   <!-- <link rel="stylesheet" type="text/css" href="{% static 'css/hospital_reservation.css' %}" />
+   <link rel="stylesheet" type="text/css" href="{% static 'css/hospital_notice.css' %}" /> -->
+   <link rel="stylesheet" type="text/css" href="{% static 'css/hospital_list.css' %}" />
+   <link rel="stylesheet" type="text/css" href="{% static 'css/hospital_detail.css' %}" />
+   <link rel="stylesheet" type="text/css" href="{% static 'css/component.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+   <script src="js/modernizr.custom.js"></script>
+   <script src="{% static 'js/jquery.min.js' %}"></script>
+   <script src="{% static 'js/bootstrap.min.js' %}"></script>
+   <title>PETKAGE</title>
+</head>
+<body>
+   <nav class="top-nav navbar navbar-static-top navbar-default">
+      <div class="container">
+         <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-nav">
+           <span class="sr-only">Toggle navigation</span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+            <a href="{% url 'home' %}" class="navbar-brand" style="margin-top:15%; margin-bottom:15%; font-size:30px;">PETKAGE</a>
+         </div>
+            <ul class="nav navbar-nav navbar-right">
+               {% if user.is_authenticated %}
+
+               <div>
+                 <ul class="nav navbar-nav navbar-right">
+                   <li><a href="{% url 'member:logout' %}">로그아웃</a></li>
+                   <li><a href="#">마이페이지</a></li>
+                 </ul>
+               </div>
+               <div>
+               <ul class="nav navbar-nav">
+                  <li><a href="{% url 'hospital' %}">병원가기</a></li>
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">펫기록부<span class="caret"></span></a>
+                     <ul class="dropdown-menu">
+                        <li><a href="{% url 'medical' %}">진료기록</a></li>
+                        <li><a href="{% url 'vaccine' %}">예방접종/구충제</a></li>
+                        <li><a href="{% url 'diary' %}">다이어리</a></li>
+                     </ul>
+                  </li>
+                  <<li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">커뮤니티<span class="caret"></span></a>
+                     <ul class="dropdown-menu">
+                        <li><a href="{% url 'post:post_list' %}">1일1자랑</a></li>
+                        <li><a href="{% url 'blog:blog_list' %}">꿀팁모음</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+               {% else %}
+               <li><a href="{% url 'member:login' %}">로그인</a></li>
+               <li><a href="{% url 'member:signup' %}">회원가입</a></li>
+               {% endif %}
+            </ul>
+         </div>
+      </div>
+   </nav>
+   <div class="container">
+      {% if messages %}
+         {% for message in messages %}
+            <div class="alert-message alert
+               {% if message.tags == 'info' %}
+                  alert-info
+               {% elif message.tags == 'success' %}
+                  alert-success
+               {% elif message.tags == 'warning' %}
+                  alert-warning
+               {% elif message.tags == 'error' %}
+                  alert-danger
+               {% endif %}
+               ">{{ message }}</div>
+         {% endfor %}
+      {% endif %}
+
+      <h1>{% block title %}{% endblock %}</h1>
+
+      {% block content %}
+
+      {% endblock %}
+      <ul>
+         <hr style="border:1px solid #004071;">
+             <li class="footer2"><a href="#" style="color:#000;"><strong>고객지원</strong></a></li>
+            <li class="footer2"><a href="#" style="color:#000;"><strong>펫키지소개</strong></a></li>
+              <li class="footer2"><a href="#" style="color:#000;"><strong>사이트맵</strong></a></li>
+              <li class="footer3" style="color:#000;"><strong>문의</strong>&nbsp;&nbsp; help@petkage.co.kr</li>
+              <li class="footer2" style="color:#000;"><strong>주소</strong>&nbsp;&nbsp; help@petkage.co.kr</li>
+              <li class="footer2" style="color:#000;"><Strong>Copyright Petkage Corp. All rights reserved.</Strong></li>
+          </ul>
+          <br>
+          <div></div>
+          <br>
+   </div>
+</body>
+</html>

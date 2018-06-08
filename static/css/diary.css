@@ -1,0 +1,102 @@
+.container5{
+            padding-top: 150px;
+          }
+
+					.boxA	{
+						border: solid 8px white;
+						line-height: 500px;
+						height: 700px;
+						background-color: #eee;
+						font-family: Verdata, Helvetica, sans-serif;
+						border: none;
+						background: none;
+						line-height: normal;
+						text-align: left;
+					}
+
+					.box1	{
+						padding: 10px;
+            margin: 0 auto;
+            width: 100%;
+						float: left;
+						display: block;
+            text-align: center;
+					}
+
+          .box2 img	{
+            height:150px;
+            width:150px;
+            margin: 0 2.1%;
+            float: left;
+            display: inline-block;
+          }
+
+          .space{
+            padding: 2% 2% 2% 2%;
+          }
+
+					.timebutton {
+					    background-color: white;
+					    border: 2px solid #555555;
+					    color: black;
+					    padding: 10px 10px;
+					    text-align: center;
+					    text-decoration: none;
+					    display: inline-block;
+					    font-size: 16px;
+					    margin: 4px 2px;
+					    -webkit-transition-duration: 0.4s; /* Safari */
+					    transition-duration: 0.4s;
+					    cursor: pointer;
+					}
+
+					.timebutton:hover {
+					    background-color: deepskyblue;
+					    color: white;
+					}
+
+					.timebutton2 {
+					    background-color: gray;
+					    border: 2px solid #555555;
+					    color: white;
+							padding: 10px 10px;
+					    text-align: center;
+					    text-decoration: none;
+					    display: inline-block;
+					    font-size: 16px;
+					    margin: 4px 2px;
+					    -webkit-transition-duration: 0.4s; /* Safari */
+					    transition-duration: 0.4s;
+					    cursor: pointer;
+					}
+
+					.timebutton2:hover {
+					    background-color: gray;
+					    color: white;
+					}
+					@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+
+					#kCalendar {width: 100%; height: 300px; border: 1px solid black;}
+
+					#kCalendar #header {height: 50px; line-height: 50px; text-align: center; font-size: 18px; font-weight: bold}
+					#kCalendar .button {color: #000; text-decoration: none;}
+
+					#kCalendar table {width: 100%; height: 250px;}
+					#kCalendar caption {display: none;}
+
+					#kCalendar .sun {text-align: center; color: deeppink;}
+					#kCalendar .mon {text-align: center; color: gray;}
+					#kCalendar .tue {text-align: center; color: gray;}
+					#kCalendar .wed {text-align: center; color: gray;}
+					#kCalendar .thu {text-align: center; color: gray;}
+					#kCalendar .fri {text-align: center; color: gray;}
+					#kCalendar .sat {text-align: center; color: deepskyblue;}
+
+          #kCalendar .sun:hover  {text-align: center; color: deeppink; background-color: deepskyblue;}
+          #kCalendar .mon:hover {text-align: center; color: gray; background-color: deepskyblue;}
+          #kCalendar .tue:hover {text-align: center; color: gray; background-color: deepskyblue;}
+          #kCalendar .wed:hover {text-align: center; color: gray; background-color: deepskyblue;}
+          #kCalendar .thu:hover {text-align: center; color: gray; background-color: deepskyblue;}
+          #kCalendar .sat:hover {text-align: center; color: deepskyblue; background-color: deepskyblue;}
+          #kCalendar .fri:hover {text-align: center; color: gray; background-color: deepskyblue;}

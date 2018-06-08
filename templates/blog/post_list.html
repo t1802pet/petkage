@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+
+{% block title %}1일1자랑{% endblock %}
+{% block content %}
+<div class="writebtn">
+<ol><a button type="button" class="btn btn-primary" href="{% url 'post:post_create' %}">작성하기</a></ol>
+</div>
+
+
+
+
+<div class="row">
+	{% for post in posts %}
+		<div id="post-{{ post.pk }}">
+			{% include 'include/post.html' with post_type='list' %}
+			<a button type="button" class="btn btn-primary" href="{% url 'post:editPost' %}">수정하기</a>
+			<!-- 수정,삭제 넣으면 될 위치 -->
+
+		</div>
+	{% endfor %}
+</div>
+{% endblock %}

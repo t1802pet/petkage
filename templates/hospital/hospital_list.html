@@ -1,0 +1,182 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block content %}
+
+  <div class="container3"><!-- 좌우측의 공간 확보 -->
+            <!-- 헤더 들어가는 부분 -->
+            <!--// 헤더 들어가는 부분 -->
+
+            <!-- 본문 들어가는 부분 -->
+    <h1 class="title">병원가기</h1>
+    <hr style="border: solid 1px #004071">
+    <br><div></div>
+    
+    
+  <h4 class="title">병원 즐겨찾기</h4><hr style="border: solid 1px #004071">
+    <div class="card cardf">
+      <a href="{% url 'hospital_detail' %}"><img src="../../static/css/images/first.jpg"></img></a><br>
+      <a href="{% url 'hospital_detail' %}"><p style="margin-left:5%; font-weight:bold; margin-top:3px; font-size:20px; color:black;  ">큰마음동물메디컬센터</p></a>
+      <div>
+        <p style="text-align:left; font-weight:bold; margin-left:5%">주소: &nbsp;<span style="font-weight:normal;">경부산 해운대구 해변로35번길</span></p>
+        <p style="text-align:left; font-weight:bold; margin-left:5%">전화번호: &nbsp;<span style="font-weight:normal;">051-710-2004</span></p>
+        <div class="allStar">
+          <input class="star" type="checkbox"></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card cardf">
+      <a href="{% url 'hospital_detail' %}"><img src="../../static/css/images/hospital2.jpg"></img></a><br>
+      <a href="{% url 'hospital_detail' %}"><p style="margin-left:5%; font-weight:bold; margin-top:3px; font-size:20px; color:black;  ">두리틀 동물병원</p></a>
+      <div>
+        <p style="text-align:left; font-weight:bold; margin-left:5%; margin-right:5%">주소: &nbsp;<span style="font-weight:normal;">서울특별시 서대문구 응암로66</span></p>
+        <p style="text-align:left; font-weight:bold; margin-left:5%">전화번호: &nbsp;<span style="font-weight:normal;">02-302-3275</span></p>
+        <div class="allStar">
+          <input class="star" type="checkbox"></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card cardf">
+      <a href="{% url 'hospital_detail' %}"><img src="../../static/css/images/hospital3.jpg"></img></a><br>
+      <a href="{% url 'hospital_detail' %}"><p style="margin-left:5%; font-weight:bold; margin-top:3px; font-size:20px; color:black;  ">보비 동물병원</p></a>
+      <div>
+        <p style="text-align:left; font-weight:bold; margin-left:5%">주소: &nbsp;<span style="font-weight:normal;">인천광역시 부평구 411-5</span></p>
+        <p style="text-align:left; font-weight:bold; margin-left:5%">전화번호: &nbsp;<span style="font-weight:normal;">032-524-6959</span></p>
+        <div class="allStar">
+          <input class="star" type="checkbox"></p>
+        </div>
+      </div>
+    </div>
+    
+
+    
+
+  
+    <br>
+  <div class="ggul"> 
+    <h4 class="title">병원 찾기</h4><hr style="border: solid 1px #004071">
+    <div class="search">
+    <select class="form-control2 text4" id="mail">
+      <option value="JC">전체</option>
+      <option value="JS">병원명</option>
+      <option value="NY">주소</option>
+    </select>
+    <input type="text" class="form-control2">
+    <button class="form-control3">검색</button>
+  </div><br>
+  <div style="text-align:right; ">
+  <a href="#" style="color:black;">거리순</a>&nbsp;|
+  <a href="#" style="color:black;">이름순</a>
+  </div><br><br>
+    <div class="card cardf">
+      <a href="{% url 'hospital_detail' %}"><img src="../../static/css/images/hospital.jpg"></img></a><br>
+      <a href="{% url 'hospital_detail' %}"><p style="margin-left:5%; font-weight:bold; margin-top:3px; font-size:20px; color:black;  ">폴 동물병원</p></a>
+      <div>
+        <p style="text-align:left; font-weight:bold; margin-left:5%">주소: &nbsp;<span style="font-weight:normal;">경기도 성남시 분당구 15-2</span></p>
+        <p style="text-align:left; font-weight:bold; margin-left:5%">전화번호: &nbsp;<span style="font-weight:normal;">031-717-7558</span></p>
+        <div class="allStar">
+          <input class="star" type="checkbox" checked></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card cardf">
+      <a href="{% url 'hospital_detail' %}"><img src="../../static/css/images/hospital4.jpg"></img></a><br>
+      <a href="{% url 'hospital_detail' %}"><p style="margin-left:5%; font-weight:bold; margin-top:3px; font-size:20px; color:black;  ">바우 동물병원</p></a>
+      <div>
+        <p style="text-align:left; font-weight:bold; margin-left:5%; margin-right:5%">주소: &nbsp;<span style="font-weight:normal;">서울특별시 양천구 1052-3</span></p>
+        <p style="text-align:left; font-weight:bold; margin-left:5%">전화번호: &nbsp;<span style="font-weight:normal;">02-2643-8204</span></p>
+        <div class="allStar">
+          <input class="star" type="checkbox" checked></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card cardf">
+      <a href="{% url 'hospital_detail' %}"><img src="../../static/css/images/hospital5.jpg"></img></a><br>
+      <a href="{% url 'hospital_detail' %}"><p style="margin-left:5%; font-weight:bold; margin-top:3px; font-size:20px; color:black;  ">다온 동물병원</p></a>
+      <div>
+        <p style="text-align:left; font-weight:bold; margin-left:5%">주소: &nbsp;<span style="font-weight:normal;">경기도 안양시 동안구 평촌동</span></p>
+        <p style="text-align:left; font-weight:bold; margin-left:5%">전화번호: &nbsp;<span style="font-weight:normal;">031-689-5975</span></p>
+        <div class="allStar">
+          <input class="star" type="checkbox" checked></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card cardf">
+      <a href="{% url 'hospital_detail' %}"><img src="../../static/css/images/hospital6.jpg"></img></a><br>
+      <a href="{% url 'hospital_detail' %}"><p style="margin-left:5%; font-weight:bold; margin-top:3px; font-size:20px; color:black;  ">온누리 동물병원</p></a>
+      <div>
+        <p style="text-align:left; font-weight:bold; margin-left:5%">주소: &nbsp;<span style="font-weight:normal;">인천광역시 남구 용현동 146-275</span></p>
+        <p style="text-align:left; font-weight:bold; margin-left:5%">전화번호: &nbsp;<span style="font-weight:normal;">032-866-5725</span></p>
+        <div class="allStar">
+          <input class="star" type="checkbox" checked></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card cardf">
+      <a href="{% url 'hospital_detail' %}"><img src="../../static/css/images/hospital7.jpg"></img></a><br>
+      <a href="{% url 'hospital_detail' %}"><p style="margin-left:5%; font-weight:bold; margin-top:3px; font-size:20px; color:black;  ">김현태 동물병원</p></a>
+      <div>
+        <p style="text-align:left; font-weight:bold; margin-left:5%; margin-right:5%">주소: &nbsp;<span style="font-weight:normal;">부산광역시 사하구 다대동 37</span></p>
+        <p style="text-align:left; font-weight:bold; margin-left:5%">전화번호: &nbsp;<span style="font-weight:normal;">051-265-7582</span></p>
+        <div class="allStar">
+          <input class="star" type="checkbox" checked></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card cardf">
+      <a href="{% url 'hospital_detail' %}"><img src="../../static/css/images/hospital8.jpg"></img></a><br>
+      <a href="{% url 'hospital_detail' %}"><p style="margin-left:5%; font-weight:bold; margin-top:3px; font-size:20px; color:black;  ">소래 동물병원</p></a>
+      <div>
+        <p style="text-align:left; font-weight:bold; margin-left:5%">주소: &nbsp;<span style="font-weight:normal;">인천광역시 소래역16번길 8-7</span></p>
+        <p style="text-align:left; font-weight:bold; margin-left:5%">전화번호: &nbsp;<span style="font-weight:normal;">032-438-3227</span></p>
+        <div class="allStar">
+          <input class="star" type="checkbox" checked></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card cardf">
+      <a href="{% url 'hospital_detail' %}"><img src="../../static/css/images/hospital9.jpg"></img></a><br>
+      <a href="{% url 'hospital_detail' %}"><p style="margin-left:5%; font-weight:bold; margin-top:3px; font-size:20px; color:black;  ">동래종합 동물병원</p></a>
+      <div>
+        <p style="text-align:left; font-weight:bold; margin-left:5%">주소: &nbsp;<span style="font-weight:normal;">부산광역시 동래구 온천동 435-1</span></p>
+        <p style="text-align:left; font-weight:bold; margin-left:5%">전화번호: &nbsp;<span style="font-weight:normal;">051-558-0775</span></p>
+        <div class="allStar">
+          <input class="star" type="checkbox" checked></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card cardf">
+      <a href="{% url 'hospital_detail' %}"><img src="../../static/css/images/hospital10.jpg"></img></a><br>
+      <a href="{% url 'hospital_detail' %}"><p style="margin-left:5%; font-weight:bold; margin-top:3px; font-size:20px; color:black;  ">토리 동물병원</p></a>
+      <div>
+        <p style="text-align:left; font-weight:bold; margin-left:5%; margin-right:5%">주소: &nbsp;<span style="font-weight:normal;">서울특별시 강서구 가양동</span></p>
+        <p style="text-align:left; font-weight:bold; margin-left:5%">전화번호: &nbsp;<span style="font-weight:normal;">02-3144-5119</span></p>
+        <div class="allStar">
+          <input class="star" type="checkbox" checked></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card cardf">
+      <a href="{% url 'hospital_detail' %}"><img src="../../static/css/images/hospital11.jpg"></img></a><br>
+      <a href="{% url 'hospital_detail' %}"><p style="margin-left:5%; font-weight:bold; margin-top:3px; font-size:20px; color:black;  ">닥터제이 동물병원</p></a>
+      <div>
+        <p style="text-align:left; font-weight:bold; margin-left:5%">주소: &nbsp;<span style="font-weight:normal;">서울특별시 송파구 석촌동 184-8</span></p>
+        <p style="text-align:left; font-weight:bold; margin-left:5%">전화번호: &nbsp;<span style="font-weight:normal;">02-2202-3633</span></p>
+        <div class="allStar">
+          <input class="star" type="checkbox" checked></p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}

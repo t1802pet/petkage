@@ -1,0 +1,90 @@
+/*.container3{
+            padding-top: 10%;
+          }*/
+  
+      
+  .title{
+    font-weight:bold;
+    color:#004071 !important;
+  }
+  .table{
+    border-top:black 1.5px solid;
+    border-bottom:black 1.5px solid;
+    float:left;
+    clear: both;
+    text-align:center;
+  }
+  .ftd{
+    background-color:#e5edf8;
+    font-weight:bold;
+    
+  }
+  .text{
+    width:50%;
+  }
+  .text2{
+    width:20%;
+  }
+  .text3{
+    width:10%;
+  }
+  .text4{
+    width:30%;
+  }
+  .plus{
+    margin-left:46%;
+  }
+  .button{
+    float:right;
+    background-color: #004071;
+    color:white !important;
+    font-weight:bold;
+    width:100px;
+  }
+  .search{
+    margin-left:71%;
+  }
+  
+  .card{
+    float:left;
+    width:300px;
+    height:300px;
+    background-color:#e5edf8;
+    margin-left:30px;
+    box-shadow: 1px 1px 1px 1px #c0bebe;
+  }
+  .cardf{
+    margin-left:5%;
+    margin-bottom:5%;
+  }
+  
+  .ggul{
+    margin-top:30%;
+  }
+  
+  .card img{
+    margin-left:5%;
+    margin-top:5%;
+    width:90%;
+    height:60%;
+    border:solid 2px #444545;
+  }
+  .star {
+    visibility:hidden;
+    font-size:40px;
+    cursor:pointer;
+  }
+  .star:before {
+     content: "\2605";
+     position: absolute;
+     visibility:visible;
+  }
+  .star:checked:before {
+     content: "\2606";
+     position: absolute;
+  }
+  .allStar{
+    margin-left:85%;
+    float:left;
+    margin-top:-60px;
+  }

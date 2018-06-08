@@ -1,0 +1,138 @@
+.container{
+            padding-top: 150px;
+          }
+
+					.boxA	{
+						border: solid 8px white;
+						line-height: 500px;
+						height: 700px;
+						background-color: eee;
+						font-family: Verdata, Helvetica, sans-serif;
+						border: none;
+						background: none;
+						line-height: normal;
+						text-align: left;
+					}
+
+					.box1	{
+						padding: 10px;
+						float: left;
+						display: block;
+						width:25%;
+						border-color: white;
+						color: #000000;
+						background-color: #eee;
+					}
+
+					.box2	{
+						padding: 10px;
+						float: left;
+						display: block;
+						width:50%;
+						border-color: white;
+						color: #65c4cf;
+						background-color: #eee;
+					}
+
+					.box3	{
+						padding: 10px;
+						float: left;
+						display: block;
+						width:25%;
+						border-color: white;
+						color: #65c4cf;
+						background-color: #eee;
+					}
+					.box4	{
+						width:100%;
+						height: 300px;
+						color: #000000;
+						background-color: #eee;
+
+					}
+					.box5	{
+						width:100%;
+						height: 600px;
+						color: #000000;
+						background-color: #eee;
+					}
+
+					.box6	{
+						width:100%;
+						height: 350px;
+						color: #000000;
+						background-color: #eee;
+					}
+					.box7	{
+						width:100%;
+						height: 250px;
+						color: #000000;
+						background-color: #eee;
+
+					}
+					.box8	{
+						width:100%;
+						height: 190px;
+						color: #000000;
+						background-color: #eee;
+
+					}
+
+					.timebutton {
+					    background-color: white;
+					    border: 2px solid #555555;
+					    color: black;
+					    padding: 10px 10px;
+					    text-align: center;
+					    text-decoration: none;
+					    display: inline-block;
+					    font-size: 16px;
+					    margin: 4px 2px;
+					    -webkit-transition-duration: 0.4s; /* Safari */
+					    transition-duration: 0.4s;
+					    cursor: pointer;
+					}
+
+					.timebutton:hover {
+					    background-color: deepskyblue;
+					    color: white;
+					}
+
+					.timebutton2 {
+					    background-color: gray;
+					    border: 2px solid #555555;
+					    color: white;
+							padding: 10px 10px;
+					    text-align: center;
+					    text-decoration: none;
+					    display: inline-block;
+					    font-size: 16px;
+					    margin: 4px 2px;
+					    -webkit-transition-duration: 0.4s; /* Safari */
+					    transition-duration: 0.4s;
+					    cursor: pointer;
+					}
+
+					.timebutton2:hover {
+					    background-color: gray;
+					    color: white;
+					}
+					@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+
+					#kCalendar {width: 100%; height: 300px; border: 1px solid black;}
+
+					#kCalendar #header {height: 50px; line-height: 50px; text-align: center; font-size: 18px; font-weight: bold}
+					#kCalendar .button {color: #000; text-decoration: none;}
+
+					#kCalendar table {width: 100%; height: 250px;}
+					#kCalendar caption {display: none;}
+
+					#kCalendar .sun {text-align: center; color: deeppink;}
+					#kCalendar .mon {text-align: center; color: gray;}
+					#kCalendar .tue {text-align: center; color: gray;}
+					#kCalendar .wed {text-align: center; color: gray;}
+					#kCalendar .thu {text-align: center; color: gray;}
+					#kCalendar .fri {text-align: center; color: gray;}
+					#kCalendar .sat {text-align: center; color: deepskyblue;}
+					

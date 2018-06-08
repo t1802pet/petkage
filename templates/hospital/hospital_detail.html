@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block content %}
+  
+  <div class="main">
+     <h1 class="title">병원가기</h1>    <hr style="border: solid 1px #004071">
+      <img src="http://mblogthumb2.phinf.naver.net/MjAxODAxMjZfMzAg/MDAxNTE2OTYxMDk2MzQ1.hYY8f0xd6MB-JfvZDJR8v3YmimuAJSs_8d7EFx82VAkg.dqaH16AJYDnWld3FyqCpyiAT56Pv2A-xs6IoGs_XxEEg.JPEG.keunmaeum2018/Untitled-1.jpg?type=w800" alt="동물병원사진">
+      <table class="mainTable">
+        <thead>
+          <tr>
+            <th colspan="2">큰마음동물메디컬센터</th>
+          </tr>
+        </thead>
+        <tr>
+          <td style="font-weight: bold;">주소</td>
+          <td>부산 해운대구 해운대해변로357번길 17</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">전화번호</td>
+          <td>051-710-2004</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">운영시간</td>
+          <td>평일 09:00~21:00</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;"></td>
+          <td>토요일 09:00~18:00</td>
+        </tr>
+      </table>
+  </div>
+  <div class="button"><a href="{% url 'hospital_reservation' %}">예약신청하기</a></div>
+    <div class="intro_bottom">
+    <table>
+      <thead>
+        <tr>
+          <th>병원소개</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr">
+          <td style="text-align:left; ">
+      안녕하세요. 큰마음동물메디컬센터는 서울 대형 2차병원 출신의 대표원장과 부원장, 동물을 사랑하고, 케어하는데 능숙하신
+      경력 간호사분들과 미용사분이 함께하고있는 수술전문,<br> 내과심화진료전문 병원입니다.<br><br>
+      동시 20마리를 케어할수있는, 산소공급장치/온열/환기 기능의 스테인레스 입원장, 신장/심장환자를 위한 인퓨전 펌프가 구비되어있으며
+      안압계 / 혈압계를 비롯한 최신형 디지털 X-ray / 고가의 심장초음파가 가능한 초음파 기계
+      전동수술대, 최고급 무영등, 호흡마취기계, LED 스케일러, 내시경 등의 대학병원급 장비가 구비되어있습니다.<br><br>
+      정품약, 최고급 의료기기만을 사용하여 정확하고, 빠른회복을 돕는 큰마음동물메디컬센터입니다.<br><br>
+
+      큰마음동물메디컬센터미용실에서는, 5종류이상의 샴푸가 갖추어져있어, 아이의 피부 타입에 맞는 샴푸를 사용합니다.<br><br>
+      또한 저희 큰마음동물메디컬센터미용실에서는 드라이룸을 사용하지않습니다. (화상/안구건조증/안구내털박힘 등의 예방차원)<br>
+      스트레스 최소화를 위한, 애견욕조가 구비되어있으며 / 탄산스파 거품 목욕이 가능한 고가의 바스펫 기계가 구비되어있습니다.<br>
+      
+      </td>
+        </tr>
+      </tbody>
+
+    </table>
+
+    <table class="notice">
+      <thead>
+        <tr colspan="3">
+          <th>공지사항</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="title">
+          <td>No.</td>
+          <td>제목</td>
+          <td>작성일</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td><a href="{% url 'hospital_notice' %}" style="color:black;">세계 동물의 날을 맞이해 24시간 진료합니다!</a></td>
+          <td>2017-10-04</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="notice">
+      <thead>
+        <tr colspan="5">
+          <th>Q&A</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="title">
+          <td>No.</td>
+          <td>답변 상태</td>
+          <td>제목</td>
+          <td>작성자 ID</td>
+          <td>작성일</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>답변 완료</td>
+          <td>공휴일에 쉬나요?</td>
+          <td>pet123</td>
+          <td>2018-05-25</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div></div><br><div></div><br><div></div><br>
+
+{% endblock content %}

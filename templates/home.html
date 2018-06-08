@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block content %}
+
+    <div class="index_container">
+        <a class="reservation" href="{% url 'hospital' %}"><div class="row2"> 병원예약하기 </div></a>
+        <a class="diary" href="{% url 'diary' %}"><div class="row1"> 다이어리 </div></a>
+        <a class="record" href="{% url 'medical' %}"><div class="row1"> 진료기록확인 </div></a>
+        <a class="vacc" href="{% url 'vaccine' %}"><div class="row2"> 예방접종/구충제 </div></a>
+        <a class="photo" href="{% url 'post:post_list' %}"><div class="row1"> 1일1자랑 </div></a>
+        <a class="tips" href="{% url 'blog:blog_list' %}"><div class="row1"> 꿀팁모음 </div></a>
+    </div>
+
+
+    <div></div><br><div></div><br><div></div><br>
+
+    
+
+{% endblock content %}

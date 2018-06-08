@@ -1,0 +1,79 @@
+{% load static %}
+
+
+<!-- 좋아요를 위해 추가해봄 -->
+
+	<!--<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">-->
+	<!--<link rel="stylesheet" href="{% static 'css/style.css' %}">-->
+	<!--<script src="{% static 'js/jquery.min.js' %}"></script>-->
+	<!--<script src="{% static 'js/bootstrap.min.js' %}"></script>-->
+
+
+
+
+
+	{% if post_type == 'list' %}
+
+   <table class="tabletip">
+     <thead>
+       <tr>
+         <td class="ftd">작성자</td>
+         <td class="ftd">제목</td>
+         <td class="ftd">작성일</td>
+       </tr>
+     </thead>
+
+     <tbody>
+    {% for post in posts %}
+
+            <tr>
+                <td><a href="{% url 'blog:blog_detail' post_pk=post.pk %}">{{post.author}} </a> </td>
+                <td><a href="{% url 'blog:blog_detail' post_pk=post.pk %}">{{post.psttitle}} </a> </td>
+                <td><a href="{% url 'blog:blog_detail' post_pk=post.pk %}">{{post.pstdate}} </a> </td>
+            </tr>
+
+    {% endfor %}
+     </tbody>
+   </table>
+	{% else %}
+
+    <table class="table">
+
+
+       <tr>
+         <td class="ftd">작성자</td>
+         <td>{{post.author}}</td>
+       </tr>
+
+        <tr>
+         <td class="ftd">제목</td>
+         <td>{{post.psttitle}} </td>
+       </tr>
+
+        <tr>
+         <td class="ftd">작성일</td>
+         <td >{{post.pstdate}} </td>
+       </tr>
+
+        <tr>
+         <td colspan="2">
+             {% if post.bphoto %}
+             <img src="{{ post.bphoto.url }}" alt="" class="post-image">
+             <br><br>
+             <div class="post-image">{{ post.psttext|linebreaks }}</div>
+             {% else %}
+             <br><br>
+             <div class="post-image">{{ post.psttext|linebreaks }}</div>
+             {% endif %}
+         </td>
+       </tr>
+    </table>
+
+	{% endif %}
+
+
+
+
+
+
+

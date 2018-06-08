@@ -1,0 +1,80 @@
+/* .post-item {
+  display: inline;
+  width: 30%;
+} */
+
+/* .post-list {
+  display: inline;
+  width: 30px;
+  /* padding: 1000px; */
+/*} *!*/
+
+
+.post-text {
+}
+
+.btn-container {
+  display:flex;
+}
+
+.post-item .post-image {
+    width: 100%;
+    padding: 3%;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.post-item hr {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.post-item .comment-form input.content {
+    border: 0;
+    width: 100%;
+    outline: none;
+}
+
+.post-item .comment-list {
+    vertical-align: middle;
+}
+
+.post-item .comment-list .comment .comment-author {
+    font-weight: bold;
+    margin-right: 3px;
+}
+
+.post-text > p {
+  padding: 3%;
+}
+
+.post-item {
+  width: 60%;
+  margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-post-toggle{
+  color: #004071;
+  background-color: rgba(113, 8, 41, 0);
+  border-color: rgba(113, 8, 41, 0);
+}
+
+.btn-post-toggle:hover{
+  color: #fff;
+  background-color: #e5edf8;
+  border-color: rgba(113, 8, 41, 0);
+}
+
+.save {
+  color: #fff;
+  background-color: #004071;
+  border-color: #004071;
+}
+
+.save:hover{
+  color: #004071;
+  background-color: #e5edf8;
+  border-color: rgba(113, 8, 41, 0);
+}

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block content %}
+  
+
+<div class="container2">
+  <div class="title"><h2><b>세계 동물의 날을 맞이해 24시간 진료합니다!</b></h2><h4 class="date">2017-10-04</h4><div>
+  <hr>
+  <!--content -->
+  <img class="gif" src="../../static/css/images/wad.gif"></img><br>
+  <div class="content">10월 4일은 <div class="content2">세계 동물의 날(World Animal Day)</div>로, 세계 동물의 권리와 복지 및 보호를 위한 기념일입니다. <br>
+    세계 동물의 날은 1931년 이탈리아 피렌체에서 열린 생태학자대회에서 인간과 동물의 유대감을 강화하고 멸종위기에 빠진 동물을<br>
+    보호하자는 의미에서 제정됐다고합니다.<br><div></div><br>
+    따라서 저희 시민동물병원은 10월 4일 세계 동물의 날을 맞이해 병원 운영시간을<br> 오전 9시 부터 오후 6시까지가 아닌<br>
+    10월 4일 하루 동안 <div class="content3">" 24시간 운영 "</div> 하도록 하겠습니다.<br>
+    <div></div><br><div></div><br><div></div><br><div></div><br>
+</div>
+  <br>
+  <button id="one"><a href="{% url 'hospital_detail' %}" style="color:black;">돌아가기</a></button>
+  <div></div><br><div></div><br><div></div><br>
+
+
+{% endblock content %}

@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block content %}
+  
+
+<div class="container">
+
+				<h1>예약하기</h1> <hr>
+				<div class="boxA">
+					<div class="box1">
+						<div class="box4">
+							<label>1. 예약항목</label>
+							<select class="form-control" id="mail">
+										<option value="N">진료</option>
+										<option value="H">미용</option>
+							</select>
+						</div>
+						<div class="box4">
+							<label>2. 반려동물 선택</label>
+							<select class="form-control" id="mail">
+										<option value="N">코코</option>
+										<option value="H">동동</option>
+										<option value="G">하키</option>
+										<option value="N">요미</option>
+										<option value="Z">콩이</option>
+							</select>
+						</div>
+					</div>
+					<div class="box2">
+						<div class="box6">
+						<label>3. 날짜 </label>
+						<script src="../../static/js/script.js"></script>
+						<div id="kCalendar"></div>
+						<script>
+							window.onload = function () {
+								kCalendar('kCalendar');
+							};
+						</script>
+					</div>
+						<div class="box7">
+						<label>4. 방문가능시간 </label>
+						<div class="radio">
+								<label>
+										<input type="radio" id="provisionYn" name="provisionYn" value="Y" autofocus="autofocus" checked>
+										오전
+								</label>
+
+								<label>
+										<input type="radio" id="provisionYn" name="provisionYn" value="N">
+										오후
+								</label>
+						</div>
+						<div class="box8">
+
+		<button class="timebutton">09:00</button>
+		<button class="timebutton">09:15</button>
+		<button class="timebutton2">09:30</button>
+		<button class="timebutton2">09:45</button>
+		<button class="timebutton">10:00</button>
+		<button class="timebutton">10:15</button>
+		<button class="timebutton">10:30</button>
+		<button class="timebutton2">10:45</button>
+		<button class="timebutton">11:00</button>
+		<button class="timebutton">11:15</button>
+		<button class="timebutton2">11:30</button>
+		<button class="timebutton">11:45</button>
+						</div>
+
+					</div>
+					</div>
+					<div class="box3">
+						<div class="box5">
+							<label>5. 특이사항 </label>
+						<textarea class="form-control" rows="10" style="resize:none">
+								반려동물의 상태를 작성해주세요.
+						</textarea>
+					</div>
+				</div>
+				</div>
+
+				<div class="form-group">
+						<div class="col-lg-offset-5 col-lg-5">
+								<button type="submit" class="btn btn-default">예약신청</button>
+						</div>
+				</div>
+			</div>
+
+			<div></div><br><div></div><br><div></div><br>
+
+{% endblock content %}

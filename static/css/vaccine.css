@@ -1,0 +1,77 @@
+
+    .vacTable {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    /*position: absolute;*/
+    margin-top: 5%;
+
+
+  }
+  .vacTh {
+    background-color:#e5edf8;
+    font-size:17px;
+    font-weight:bold;
+  }
+
+  .vacTd, .vacth {
+    border: 2px solid #dddddd;
+    text-align: center;
+    padding: 15px;
+  }
+
+
+    /*.line2{*/
+      /*!*position: absolute;*!*/
+      /*border-bottom: 1px solid black;*/
+      /*width:100%;*/
+      /*!*left:15px;*!*/
+
+    /*}*/
+
+    /*.red{*/
+      /*float:left;*/
+    /*}*/
+    /*.read{*/
+      /*float:left;*/
+    /*}*/
+    /*.rad{*/
+      /*float:left;*/
+    /*}*/
+    /*.realfooter{*/
+      /*position: absolute;*/
+      /*top:730px;*/
+    /*}*/
+    .drop{
+      position: absolute;
+      left: 846px;
+    }
+
+    /*.tab-list {*/
+     /*padding-bottom: 1rem;*/
+     /*width: auto;*/
+     /*!* right: 5%; *!*/
+   /*}*/
+
+   .one {
+      border: 3px solid #1168AA ;
+      color:#1168AA !important;
+      border-radius: 40px  ;
+      display: inline-block;
+      text-decoration: none;
+      padding: .5rem 1rem;
+      color: white;
+      font-weight: bold;
+      background-color: white;
+  }
+  .two {
+     border: 3px solid #8E8E8E ;
+     color:#8E8E8E !important;
+     border-radius: 40px  ;
+     display: inline-block;
+     text-decoration: none;
+     padding: .5rem 1rem;
+     color: white;
+     font-weight: bold;
+     background-color: white;
+ }

@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block content %}
+
+    <div class="container">
+  <div class="title"><h2><b>예방접종/구충제</b></h2><div>
+  <div class="line2"></div>
+  <div></div><br>
+  <!--content -->
+  <div class="dropdown drop">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">반려동물 선택
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">반지</a></li>
+      <li><a href="#">후추</a></li>
+      <li><a href="#">케찹</a></li>
+      <li><a href="#">마요</a></li>
+    </ul>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="one">예방접종</button>&nbsp;&nbsp;&nbsp;
+    <button class="two">구충제</button>
+
+
+  </div>
+  <!-- table -->
+  <br>
+  <div>
+    <table class="vacTable">
+  <tr>
+    <th class="vacTh vacTd">예방접종명/횟수</th>
+    <th class="vacTh vacTd">1회</th>
+    <th class="vacTh vacTd">2회</th>
+    <th class="vacTh vacTd">3회</th>
+    <th class="vacTh vacTd">4회</th>
+    <th class="vacTh vacTd">5회</th>
+    <th class="vacTh vacTd">6회</th>
+  </tr>
+  <tr>
+    <td class="vacTd" style="background-color:#e5edf8; font-size:17px; font-weight:bold;">종합백신<br>(DHPPL)</td>
+    <td class="vacTd"><img src="../../static/css/images\check.png"></img></td>
+    <td class="vacTd"><img src="../../static/css/images\icon.png"></img></td>
+    <td class="vacTd"><img src="../../static/css/images\icon.png"></img></td>
+    <td class="vacTd"><img src="../../static/css/images\icon.png"></img></td>
+    <td class="vacTd"><img src="../../static/css/images\icon.png"></img></td>
+    <td class="vacTd"><img src="../../static/css/images\icon.png"></img></td>
+  </tr>
+  <tr>
+    <td class="vacTd" style="background-color:#e5edf8; font-size:17px; font-weight:bold;">코로나장염백신</td>
+    <td class="vacTd"><img src="../../static/css/images\icon.png"></img></td>
+    <td class="vacTd"><img src="../../static/css/images\icon.png"></img></td>
+    <td class="vacTd"><img src="../../static/css/images\icon.png"></img></td>
+    <td class="vacTd"><img src="../../static/css/images\icon.png"></img></td>
+    <td class="vacTd"><img src="../../static/css/images\icon.png"></img></td>
+    <td class="vacTd"><img src="../../static/css/images\icon.png"></img></td>
+  </tr>
+  <tr>
+    <td class="vacTd" style="background-color:#e5edf8; font-size:17px; font-weight:bold;">켄넬코프</td>
+    <td class="vacTd"><img src="../../static/css/images\check.png"></img></td>
+    <td class="vacTd"><img src="../../static/css/images\check.png"></img></td>
+    <td class="vacTd"><img src="../../static/css/images\check.png"></img></td>
+    <td class="vacTd"><img src="../../static/css/images\icon.png"></img></td>
+    <td class="vacTd"><img src="../../static/css/images\icon.png"></img></td>
+    <td class="vacTd"><img src="../../static/css/images\icon.png"></img></td>
+  </tr>
+  <tr>
+    <td class="vacTd" style="background-color:#e5edf8; font-size:17px; font-weight:bold;">광견병</td>
+    <td class="vacTd"><img src="../../static/css/images\check.png"></img></td>
+    <td class="vacTd"><img src="../../static/css/images\check.png"></img></td>
+    <td class="vacTd"><img src="../../static/css/images\check.png"></img></td>
+    <td class="vacTd"><img src="../../static/css/images\check.png"></img></td>
+    <td class="vacTd"><img src="../../static/css/images\check.png"></img></td>
+    <td class="vacTd"><img src="../../static/css/images\icon.png"></img></td>
+  </tr>
+  <tr>
+    <td class="vacTd" style="background-color:#e5edf8; font-size:17px; font-weight:bold;">신종플루</td>
+    <td class="vacTd"><img src="../../static/css/images\icon.png"></img></td>
+    <td class="vacTd"><img src="../../static/css/images\icon.png"></img></td>
+    <td class="vacTd"><img src="../../static/css/images\icon.png"></img></td>
+    <td class="vacTd"><img src="../../static/css/images\icon.png"></img></td>
+    <td class="vacTd"><img src="../../static/css/images\icon.png"></img></td>
+    <td class="vacTd"><img src="../../static/css/images\icon.png"></img></td>
+  </tr>
+  <tr>
+    <td class="vacTd" style="background-color:#e5edf8;"><img src="../../static/css/images\plus.png"></img></td>
+    <td class="vacTd"></td>
+    <td class="vacTd"></td>
+    <td class="vacTd"></td>
+    <td class="vacTd"></td>
+    <td class="vacTd"></td>
+    <td class="vacTd"></td>
+  </tr>
+</table>
+</div>
+<div></div><br>
+
+{% endblock content %}

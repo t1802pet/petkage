@@ -1,0 +1,99 @@
+/* 폰트 속성 지정해주기 */
+@import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
+
+*:not(.glyphicon) {
+  font-family: 'NanumSquareRound', sans-serif !important;
+}
+
+/*꿀팁모음테이블*/
+.tabletip{
+    width: 100%;
+    border-top:black 1.5px solid;
+    border-bottom:black 1.5px solid;
+    float:left;
+    clear: both;
+    text-align:center;
+    color:#000;
+   }
+   .ftd{
+      background-color:#e5edf8;
+      font-weight:bold;
+   }
+   .tabletip tr:hover {
+       background-color: #ddd;
+   }
+
+   .tabletip tr a{
+       text-decoration: none;
+       display: block;
+       color:#000;
+   }
+
+   .post-image {
+       width: 50%;
+       margin: 0 auto;
+       display: block;
+   }
+
+
+/* h1 태그 폰트 굵기 */
+h1 {
+  font-weight: bold;
+}
+
+/* Default */
+ul, ol {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+/* 작성하기 버튼 수정 */
+.writebtn {
+  top: 20%;
+  margin-bottom: 3rem;
+}
+
+/* 작성하기 버튼 오른쪽 정렬 */
+.writebtn > ol {
+  text-align: right;
+}
+
+/* Top navigation bar */
+nav.top-nav #top-nav:not(.in) .search-hashtag-form {
+    margin-top: 15px;
+}
+nav.top-nav #top-nav.collapsing .search-hashtag-form,
+nav.top-nav #top-nav.in .search-hashtag-form {
+    margin-top: -1px;
+}
+nav.top-nav #top-nav:not(.in):not(.collapsing) .search-hashtag-form .search-hashtag-input {
+    font-size: 10px;
+    padding: 3px 10px;
+    height: 30px;
+    border: 0;
+    outline: none;
+}
+
+/* 네비게이션 메뉴 정렬 */
+.navbar-right {
+  margin-right: 0;
+}
+
+/* Post */
+
+
+/* 네비게이션 메뉴 정렬 */
+.textright{
+    margin-right:5%;
+}
+
+.footer2{
+    display:inline;
+    padding: 0 5px;
+}
+
+.footer3{
+    display: inline;
+    padding: 0 5px;
+    margin-left:10%;
+}
